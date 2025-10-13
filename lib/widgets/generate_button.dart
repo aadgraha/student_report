@@ -105,6 +105,10 @@ class _GenerateButtonState extends State<GenerateButton> {
               final document = PdfDocument(inputBytes: pdfData);
               final form = document.form;
               for (var i = 0; i < form.fields.count; i++) {
+                (form.fields[i] as PdfTextBoxField).font = PdfStandardFont(
+                  PdfFontFamily.timesRoman,
+                  12,
+                );
                 if (form.fields[i].name == 'student_name') {
                   (form.fields[i] as PdfTextBoxField).text =
                       row['student_name'].toString();
