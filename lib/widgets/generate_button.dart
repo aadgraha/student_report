@@ -78,7 +78,7 @@ class _GenerateButtonState extends State<GenerateButton> {
                     },
                     onDone: () async {
                       final scaffoldMessager = ScaffoldMessenger.of(context);
-                      Future.delayed(Duration(seconds: 2), () {
+                      Future.delayed(Duration(milliseconds: 1250), () {
                         scaffoldMessager.hideCurrentSnackBar();
                         setState(() {
                           _inProgress = false;
