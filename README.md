@@ -1,3 +1,3 @@
 # student_report
 
-Simple PDF generator from excel file.
+Simple student report PDF generator from excel file.
