@@ -66,7 +66,7 @@ class _GenerateButtonState extends State<GenerateButton> {
     }
 
     return Tooltip(
-      message: !_inProgress ? 'Clik untuk mengupload file excel' : '',
+      message: !_inProgress ? 'Klik untuk mengupload file excel' : '',
       child: ElevatedButton(
         style: ButtonStyle(
           backgroundColor: WidgetStateProperty.all(AppColors.buttonBgColor),
