@@ -17,6 +17,12 @@ class _GenerateButtonState extends State<GenerateButton> {
   var _inProgress = false;
 
   @override
+  void dispose() {
+    _stepBloc.close();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     void showSnackBar() {
       final snackBar = SnackBar(
